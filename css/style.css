@@ -1,0 +1,126 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'TT Lakes', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  height: 100%;
+}
+
+.left-float-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+  width: 320px;
+}
+
+
+.left-float-menu__header {
+  display: flex;
+  align-items: center;
+  height: 88px;
+  margin: 0 24px;
+  gap: 16px;
+  background-color: #FFFFFF;
+}
+
+button {
+  font-size: 16px;
+  font-family: 'TT Lakes', sans-serif;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.header__button {
+  width: 40px;
+  height: 40px;
+  line-height: 0;
+  border-radius: 20px;
+  background-color:  rgba(255, 62, 121, 1);
+}
+
+.group {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.left-float-menu__main {
+  flex-grow: 1;
+}
+
+.left-float-menu__main--menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.left-float-menu__main--button {
+  padding-left: 24px;
+  position: relative;
+}
+
+.left-float-menu__main--button:hover {
+  color: rgba(126, 126, 130, 1);
+}
+
+.left-float-menu__main--button:hover::before {
+  content: '';
+  height: 32px;
+  width: 4px;
+  border-right: 4px solid rgba(65, 246, 215, 1);
+  border-radius: 4px;
+  margin-left: -4px;
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+
+.left-float-menu__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 24px;
+}
+
+.left-float-menu__footer-support {
+  display: flex;
+  gap: 16px;
+}
+
+.left-float-menu__footer-language {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+  margin-top: 24px;
+}
+
+.left-float-menu__footer-phone {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(27, 28, 33, 1);
+  text-decoration: none;
+}
+
+.left-float-menu__footer-language-button:hover {
+  color: rgba(126, 126, 130, 1)
+}
+
+.left-float-menu__footer-address {
+  color: rgba(27, 28, 33, 1);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgba(27, 28, 33, 1);
+  text-decoration: none;
+}
+
